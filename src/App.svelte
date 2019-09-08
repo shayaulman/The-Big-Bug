@@ -1,5 +1,5 @@
 <script>
-	const initBugs = [true, false, true, true, false];	 // true = there is a bug...
+	const initBugs = [true, false, true, true, false, true];	 // true = there is a bug...
 	let bugs = [...initBugs], solved, clickCounter = 0;
 	let bugChance = 0.35;
 
