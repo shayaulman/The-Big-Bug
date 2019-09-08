@@ -283,9 +283,9 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Play Again!";
     			attr(h1, "text-success", "");
-    			add_location(h1, file, 47, 2, 1924);
+    			add_location(h1, file, 47, 2, 1920);
     			attr(button, "class", "btn btn-success");
-    			add_location(button, file, 48, 2, 1958);
+    			add_location(button, file, 48, 2, 1954);
     			dispose = listen(button, "click", ctx.click_handler_1);
     		},
 
@@ -336,13 +336,13 @@ var app = (function () {
     				each_blocks[i].c();
     			}
     			attr(button0, "class", "btn btn-outline-warning");
-    			add_location(button0, file, 32, 3, 1316);
+    			add_location(button0, file, 32, 3, 1312);
     			attr(button1, "class", "btn btn-outline-warning");
-    			add_location(button1, file, 33, 3, 1390);
+    			add_location(button1, file, 33, 3, 1386);
     			attr(div0, "class", "justify-content-center align-items-center m-2");
-    			add_location(div0, file, 31, 2, 1253);
+    			add_location(div0, file, 31, 2, 1249);
     			attr(div1, "class", "bugs bg-light flex-column justify-content-between");
-    			add_location(div1, file, 35, 1, 1495);
+    			add_location(div1, file, 35, 1, 1491);
 
     			dispose = [
     				listen(button0, "click", ctx.addBug),
@@ -426,15 +426,15 @@ var app = (function () {
     			t4 = space();
     			attr(input, "type", "checkbox");
     			attr(input, "class", "svelte-18162yz");
-    			add_location(input, file, 39, 5, 1676);
+    			add_location(input, file, 39, 5, 1672);
     			attr(span, "class", "slider round svelte-18162yz");
-    			add_location(span, file, 40, 5, 1755);
+    			add_location(span, file, 40, 5, 1751);
     			attr(label, "class", "switch m-2 svelte-18162yz");
-    			add_location(label, file, 38, 4, 1644);
+    			add_location(label, file, 38, 4, 1640);
     			attr(h4, "class", "text-secondary m-2");
-    			add_location(h4, file, 42, 4, 1807);
+    			add_location(h4, file, 42, 4, 1803);
     			attr(div, "class", "bug d-flex justify-content-between p-2 svelte-18162yz");
-    			add_location(div, file, 37, 3, 1587);
+    			add_location(div, file, 37, 3, 1583);
 
     			dispose = [
     				listen(input, "change", input_change_handler),
@@ -491,13 +491,13 @@ var app = (function () {
     			h1.textContent = "Try to debug...";
     			t1 = space();
     			p0 = element("p");
-    			t2 = text("On each \"debugging\" there is a\n\t\t");
+    			t2 = text("On each \"debugging\", there is a\n\t\t");
     			span0 = element("span");
     			input = element("input");
-    			t3 = text(" % chance for each one of the debugged ");
+    			t3 = text(" % chance for each one of the ");
     			strong = element("strong");
-    			strong.textContent = "(green)";
-    			t5 = text(" sliders to get buggy...");
+    			strong.textContent = "green";
+    			t5 = text(" sliders to get buggy (red)...");
     			t6 = space();
     			if_block.c();
     			t7 = space();
@@ -527,23 +527,23 @@ var app = (function () {
     			attr(input, "max", "100");
     			attr(input, "step", "1");
     			input.autofocus = true;
-    			add_location(input, file, 27, 3, 1009);
+    			add_location(input, file, 27, 3, 1010);
     			attr(span0, "class", "chance-input badge badge-light");
-    			add_location(span0, file, 26, 2, 960);
-    			add_location(strong, file, 28, 48, 1178);
+    			add_location(span0, file, 26, 2, 961);
+    			add_location(strong, file, 28, 39, 1170);
     			attr(p0, "class", "alert alert-info text-center");
     			add_location(p0, file, 25, 1, 887);
     			attr(span1, "class", "badge badge-danger");
-    			add_location(span1, file, 50, 32, 2079);
+    			add_location(span1, file, 50, 32, 2075);
     			attr(p1, "class", "m-2");
-    			add_location(p1, file, 50, 1, 2048);
+    			add_location(p1, file, 50, 1, 2044);
     			attr(span2, "class", "m-2 badge badge-warning");
-    			add_location(span2, file, 51, 12, 2152);
-    			add_location(p2, file, 51, 1, 2141);
+    			add_location(span2, file, 51, 12, 2148);
+    			add_location(p2, file, 51, 1, 2137);
     			attr(a, "href", "https://github.com/shayaulman/The-Big-Bug");
-    			add_location(a, file, 52, 22, 2258);
+    			add_location(a, file, 52, 22, 2254);
     			attr(p3, "class", "alert");
-    			add_location(p3, file, 52, 1, 2237);
+    			add_location(p3, file, 52, 1, 2233);
     			attr(div, "class", "container svelte-18162yz");
     			add_location(div, file, 23, 0, 793);
     			dispose = listen(input, "change", ctx.updateChance);
