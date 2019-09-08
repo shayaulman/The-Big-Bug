@@ -1,7 +1,7 @@
 <script>
 	const initBugs = [true, false, true, true, false];	 // true = there is a bug...
 	let bugs = [...initBugs], solved, clickCounter = 0;
-	let bugChance = 0.25;
+	let bugChance = 0.35;
 
 	const updateChance = () => bugChance = +document.querySelector('.chance').value / 100;
 
