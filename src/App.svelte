@@ -25,7 +25,7 @@
 		<h1 class="m-3 heading" style="color: indigo">Try to debug...</h1>
 	<p class="alert alert-info text-center">On each "debugging", there is a
 		<span class="chance-input badge badge-light">
-			<input class="chance bg-light" type="number" value="25" min="1" max="100" step="1" on:change={ updateChance } autofocus>
+			<input class="chance bg-light" type="number" value="35" min="1" max="100" step="1" on:change={ updateChance } autofocus>
 		</span> % chance for each one of the <strong>green</strong> sliders to get buggy (red)...
 	</p>		
 	{#if !solved }
