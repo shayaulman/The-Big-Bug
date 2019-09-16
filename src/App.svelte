@@ -47,7 +47,7 @@
 	{/if}
 	<p class="m-2"> Times Clicked: <span class="badge badge-danger">{ clickCounter }</span></p>
 	<p>Chance: <span class="m-2 badge badge-warning">{ (bugChance * 100).toFixed(0) } %</span></p>
-	<p class="alert">See <a href="https://github.com/shayaulman/The-Big-Bug" target="_blank">the code</a>...</p>
+	<p class="alert alert-warning">Built with <a href="https://svelte.dev">Svelte</a> & <a href="https://getbootstrap.com">Bootsrap 4</a> | <a href="https://www.netlify.com/docs/cli/#continuous-deployment">Automatic deployed </a> with <a href="https://www.netlify.com">Netlify</a> | See <a href="https://github.com/shayaulman/The-Big-Bug" target="_blank">the code on GitHub</a></p>
 </div>
 	
 <style>
@@ -65,5 +65,8 @@ input {
 	border: none;
 }
 
+h1 {
+	font-family: serif;
+}
 
 </style>

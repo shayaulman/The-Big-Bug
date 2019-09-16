@@ -440,6 +440,7 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Play Again!";
     			attr(h1, "text-success", "");
+    			attr(h1, "class", "svelte-1kjlcoq");
     			add_location(h1, file$1, 44, 2, 1851);
     			attr(button, "class", "btn btn-success");
     			add_location(button, file$1, 45, 2, 1885);
@@ -630,7 +631,7 @@ var app = (function () {
     }
 
     function create_fragment$1(ctx) {
-    	var div, h1, t1, p0, t2, span0, input, t3, strong, t5, t6, current_block_type_index, if_block, t7, p1, t8, span1, t9, t10, p2, t11, span2, t12_value = (ctx.bugChance * 100).toFixed(0) + "", t12, t13, t14, p3, t15, a, t17, current, dispose;
+    	var div, h1, t1, p0, t2, span0, input, t3, strong, t5, t6, current_block_type_index, if_block, t7, p1, t8, span1, t9, t10, p2, t11, span2, t12_value = (ctx.bugChance * 100).toFixed(0) + "", t12, t13, t14, p3, t15, a0, t17, a1, t19, a2, t21, a3, t23, a4, current, dispose;
 
     	var if_block_creators = [
     		create_if_block,
@@ -676,14 +677,25 @@ var app = (function () {
     			t13 = text(" %");
     			t14 = space();
     			p3 = element("p");
-    			t15 = text("See ");
-    			a = element("a");
-    			a.textContent = "the code";
-    			t17 = text("...");
-    			attr(h1, "class", "m-3 heading");
+    			t15 = text("Built with ");
+    			a0 = element("a");
+    			a0.textContent = "Svelte";
+    			t17 = text(" & ");
+    			a1 = element("a");
+    			a1.textContent = "Bootsrap 4";
+    			t19 = text(" | ");
+    			a2 = element("a");
+    			a2.textContent = "Automatic deployed";
+    			t21 = text(" with ");
+    			a3 = element("a");
+    			a3.textContent = "Netlify";
+    			t23 = text(" | See ");
+    			a4 = element("a");
+    			a4.textContent = "the code on GitHub";
+    			attr(h1, "class", "m-3 heading svelte-1kjlcoq");
     			set_style(h1, "color", "indigo");
     			add_location(h1, file$1, 27, 1, 997);
-    			attr(input, "class", "chance bg-light svelte-1eci8f8");
+    			attr(input, "class", "chance bg-light svelte-1kjlcoq");
     			attr(input, "type", "number");
     			input.value = "35";
     			attr(input, "min", "1");
@@ -703,12 +715,20 @@ var app = (function () {
     			attr(span2, "class", "m-2 badge badge-warning");
     			add_location(span2, file$1, 48, 12, 2079);
     			add_location(p2, file$1, 48, 1, 2068);
-    			attr(a, "href", "https://github.com/shayaulman/The-Big-Bug");
-    			attr(a, "target", "_blank");
-    			add_location(a, file$1, 49, 22, 2185);
-    			attr(p3, "class", "alert");
+    			attr(a0, "href", "https://svelte.dev");
+    			add_location(a0, file$1, 49, 43, 2206);
+    			attr(a1, "href", "https://getbootstrap.com");
+    			add_location(a1, file$1, 49, 85, 2248);
+    			attr(a2, "href", "https://www.netlify.com/docs/cli/#continuous-deployment");
+    			add_location(a2, file$1, 49, 137, 2300);
+    			attr(a3, "href", "https://www.netlify.com");
+    			add_location(a3, file$1, 49, 232, 2395);
+    			attr(a4, "href", "https://github.com/shayaulman/The-Big-Bug");
+    			attr(a4, "target", "_blank");
+    			add_location(a4, file$1, 49, 284, 2447);
+    			attr(p3, "class", "alert alert-warning");
     			add_location(p3, file$1, 49, 1, 2164);
-    			attr(div, "class", "container svelte-1eci8f8");
+    			attr(div, "class", "container svelte-1kjlcoq");
     			add_location(div, file$1, 26, 0, 972);
     			dispose = listen(input, "change", ctx.updateChance);
     		},
@@ -744,8 +764,15 @@ var app = (function () {
     			append(div, t14);
     			append(div, p3);
     			append(p3, t15);
-    			append(p3, a);
+    			append(p3, a0);
     			append(p3, t17);
+    			append(p3, a1);
+    			append(p3, t19);
+    			append(p3, a2);
+    			append(p3, t21);
+    			append(p3, a3);
+    			append(p3, t23);
+    			append(p3, a4);
     			current = true;
     			input.focus();
     		},
